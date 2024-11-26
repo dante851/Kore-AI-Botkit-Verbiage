@@ -1,5 +1,5 @@
-var botId = "st-5ce0721c-5c5e-56b0-a0ba-cac19303c9a5";
-var botName = "OrderManage";
+var botId = "st-ae29b86a-53b5-570a-93b9-7fdb0510f76d";
+var botName = "ordermanage";
 var sdk = require("./lib/sdk");
 const xlsx = require("node-xlsx").default;
 const fs = require("fs");
@@ -33,7 +33,7 @@ module.exports = {
     }
   },
   on_bot_message: function (requestId, data, callback) {
-     // resetExcelData();
+     resetExcelData();
     if (data.message === "hi") {
       data.message = "The Bot says hello!";
       console.log("bot message", data.message);
